@@ -1,0 +1,66 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.containera1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.container2 {
+  width: 300rpx;
+  height: 100rpx;
+}
+
+.imagesa {
+  width: 520rpx;
+  height: 924rpx;
+  margin-left: 115rpx;
+  margin-right: 115rpx;
+  margin-top: 50rpx;
+  margin-block-end: 69.1rpx;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 748rpx;
+  height: 1336rpx;
+}
+
+.shareBtns {
+  width: 520rpx;
+  height: 231rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.OneShareBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 69.1rpx;
+  padding-bottom: 40rpx;
+}
+
+.OneShareImg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.OneShareText {
+  font-family: PingFangTC-Regular;
+  font-size: 20rpx;
+  color: #626262;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.canvas-box {
+}

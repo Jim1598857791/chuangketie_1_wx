@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/share/share"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创客贴作图神器",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  }
+}

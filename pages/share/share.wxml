@@ -1,0 +1,33 @@
+
+
+ <!-- 自定义导航栏 -->
+  <view class="custom flex_center" style="padding-top:{{statusBarHeight}}rpx">
+    <image class="custom-image" src='../../images/navigation/home.png' bindtap='navigate'></image>
+    <text class='custom-text'> 创客贴作图神器</text>
+  </view>
+
+  <!-- 画布 隐藏 -->
+
+    <view class='containera1'>
+      <!-- 显示生成的图片 -->
+      <view class="canvas-box">
+        <canvas canvas-id="myCanvas"  style="width: 520rpx; height: 925rpx;"></canvas>
+      </view>
+      <view class='shareBtns'>
+        <view class='OneShareBtn' bindtap="funShareToFriend">
+          <image class='OneShareImg' src='../../images/share/shareToFriend.png'></image>
+          <text class='OneShareText'> 分享给好友 </text>
+        </view>
+
+        <view class='OneShareBtn' bindtap="funShareToFriendCycle">
+          <image class='OneShareImg' src='../../images/share/shareToFriendCycle.png'> </image>
+          <text class='OneShareText'> 分享到朋友圈 </text>
+        </view>
+
+        <view class='OneShareBtn' bindtap="funSaveToMoblie">
+          <image class='OneShareImg' src='../../images/share/saveToMoblie.png'></image>
+          <text class='OneShareText'> 保存到手机 </text>
+        </view>
+      </view>
+
+    </view>

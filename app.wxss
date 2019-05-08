@@ -1,0 +1,52 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.custom {
+  display: flex;
+  height: 128rpx;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff 100%;
+  z-index: 999;
+  flex-direction: row;
+}
+
+.custom-image {
+  width: 39rpx;
+  height: 36rpx;
+  padding: 66rpx 0rpx 26rpx 29rpx;
+  text-align: center;
+}
+
+.custom-text {
+  font-family: PingFangSC-Medium;
+  font-size: 37rpx;
+  color: #000;
+  letter-spacing: 0;
+  text-align: center;
+  width: 259rpx;
+  height: 52rpx;
+  margin: 58rpx 245rpx 18rpx 177rpx;
+  justify-self: center;
+}
+
+.empty_custom {
+  height: 45px;
+  width: 100%;
+}
+
+/* --------------------- 
+作者：Duccky 
+来源：CSDN 
+原文：https://blog.csdn.net/weixin_39872588/article/details/80500164 
+版权声明：本文为博主原创文章，转载请附上博文链接！ */

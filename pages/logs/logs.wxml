@@ -1,0 +1,44 @@
+<!-- 自定义导航栏 -->
+<view class="custom flex_center" style="padding-top:{{statusBarHeight}}rpx">
+  <image class="custom-image" src='../../images/navigation/home.png' bindtap='navigate'></image>
+  <text class='custom-text'> 创客贴作图神器</text>
+</view>
+
+
+<view class='container1'>
+  <image class='backImg' src='../../images/back.png'></image>
+  <!-- 素材 -->
+  <scroll-view class='scroll-sucai' scroll-x="true">
+    <view class='scroll-sucai-view'>
+      <image class='scroll-sucai-image' wx:for="{{details[selectedItemId]}}" src='{{item.url}}' mode='aspectFit'>
+      </image>
+    </view>
+  </scroll-view>
+  <!-- 素材种类 -->
+  <view class='botto'>
+    <scroll-view class='scroll' scroll-x="true">
+      <view class='scroll-view'>
+        <image class='{{selectedItemId==index?"scroll-image-selected":"scroll-image"}}' wx:for="{{imgUrl}}" wx:key="{{index}}" src='{{item.url}}' mode="aspectFill" bindtap="showDetail" data-idqw="{{index}}">
+        </image>
+      </view>
+    </scroll-view>
+    <view class='saveBtn'>
+      <text class='savaBtn-text'>保存</text>
+    </view>
+  </view>
+
+  <!-- 遮罩层 -->
+  <view class="conts" style='display:{{disp}}'>
+    <view class="container1">
+      <view class='head '>
+        <text class='headTxt'>拼贴各种元素 \n 盘一顿你的团圆饭吧</text>
+      </view>
+      <view class='gifImage'>
+        <text class='gifImageText'>GIF图</text>
+      </view>
+      <button bindtap='hide' class='startBtn'>
+        <text class='startBtnTxt'>开始</text>
+      </button>
+    </view>
+  </view>
+</view>
